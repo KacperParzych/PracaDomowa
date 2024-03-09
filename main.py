@@ -24,3 +24,19 @@ for licz in range(0, 10):
         lista.append(l)
 print(f"Parzyste liczby: {lista}")
 # 8
+
+lista_elementow = [6, 'a', 3, 'b', 3, 8.5, 'c', 10]
+slownik = {}
+for element in lista_elementow:
+    if element in slownik:
+        slownik[element] += 1
+    else:
+        slownik[element] = 1
+usun = []
+for klucz in slownik:
+    if not isinstance(klucz, (int, float)):
+        usun.append(klucz)
+for klucz in usun:
+    del slownik[klucz]
+print(f"Słownik wystąpień: {slownik}")
+
