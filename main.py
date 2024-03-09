@@ -17,3 +17,10 @@ for liczba2 in lista_liczb:
     kwadrat = liczba2 ** 2
     print(f"Liczba {liczba2} podniesiona do kwadratu wynosi: {kwadrat}")
 # 7
+lista = []
+for licz in range(0, 10):
+    l = int(input("Podaj liczbę: "))
+    if l % 2 == 0:
+        lista.append(l)
+print(f"Parzyste liczby: {lista}")
+# 8
